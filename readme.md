@@ -12,7 +12,12 @@
     
 <!-- -fixare la card centrale fila superiopre  -->
     - sistemato il probelma dell immagine nella card superiore
-    
--risolvere gli undefined
--afdattare le immagini ai contenitori
--fixare il responsive
+
+<!-- -risolvere gli undefined -->
+    -usato il ciclo map (in correzione con i tutor) perchè il forEach non restituisce alcun valore 
+
+<!-- -afdattare le immagini ai contenitori -->
+    -dare una max-width:100% come vaolre di reset sul tag img
+
+<!-- -fixare il responsive -->
+    -stesso approccio delle img data una max-width ma alla classe container
