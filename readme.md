@@ -12,6 +12,7 @@
     
 <!-- -fixare la card centrale fila superiopre  -->
     - sistemato il probelma dell immagine nella card superiore
+    
 -risolvere gli undefined
 -afdattare le immagini ai contenitori
 -fixare il responsive

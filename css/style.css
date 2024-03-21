@@ -4,13 +4,17 @@
     box-sizing: border-box;
 }
 
+img{
+    max-width: 100%;
+}
+
 body {
     font-family: 'Merriweather', serif;
 }
 
 .container {
     padding-top: 60px;
-    width: 100%;
+    max-width: 100%;
     height: 100vh;
     background-color: #eee;
     overflow-y: scroll;

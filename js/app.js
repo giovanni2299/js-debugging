@@ -64,10 +64,20 @@ const books = [
         "author": "George Orwell",
         "title": "1984",
         "firstPublishingYear": "1948",
-        "genres": ["scienceFiction", "dystopia"],
+        "genres": ["scienceFiction","dystopia"],
         "originalLanguage": "Inglese",
         "pages": "333",
         "rating": "9.5"
+    },
+    {
+        "id": 8,
+        "author": "Isaac Asimov",
+        "title": "Io, Robot",
+        "firstPublishingYear": "1950",
+        "genres": ["robot", "stories"],
+        "originalLanguage": "Inglese",
+        "pages": "265",
+        "rating": "7"
     },
     {
         "id": 8,
@@ -111,9 +121,11 @@ function displayBooks(books) {
     const booksContainer = document.querySelector('.books');
 
     books.forEach((book) => {
-        const tags = book.genres.forEach((genre) => {
-            return `<div class="book-tag">${genre}</div>`;
+        const tags = book.genres.map((genre) => {
+            // console.log(`Ho ciclato ${genre}`);
+            return `<div class="book-tag"> ${genre} </div>`;
         });
+        // console.log(tags)
 
         const chars = {
             ',': '',
@@ -153,7 +165,7 @@ function displayBooks(books) {
                 </h2>
                 <h3 class="book-author">di ${book.author}</h3>
                 <div class="book-tags">
-                    ${tags}
+                    ${tags.join('')}
                 </div>
                 <div class="book-rating">
                     ${ratingString}
