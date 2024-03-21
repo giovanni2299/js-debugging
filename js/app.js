@@ -44,7 +44,7 @@ const books = [
         "author": "Maccio Capatonda",
         "title": "Libro",
         "firstPublishingYear": "2020",
-        "genres": ["humour"],
+        "genres": ["biography"],
         "originalLanguage": "Italiano",
         "pages": "222",
         "rating": "10"
@@ -54,7 +54,7 @@ const books = [
         "author": "Andrea Camilleri",
         "title": "La prima indagine di Montalbano",
         "firstPublishingYear": "2013",
-        "genres": ["thriller", "stories"],
+        "genres": ["adventure","thriller", "stories"],
         "originalLanguage": "Italiano",
         "pages": "340",
         "rating": "8"
@@ -64,7 +64,7 @@ const books = [
         "author": "George Orwell",
         "title": "1984",
         "firstPublishingYear": "1948",
-        "genres": ["science fiction", "dystopia"],
+        "genres": ["scienceFiction", "dystopia"],
         "originalLanguage": "Inglese",
         "pages": "333",
         "rating": "9.5"
@@ -89,16 +89,20 @@ const iconsByGenres = {
     fantasy: 'fantasy',
     travels: 'travels',
     biography: 'biography',
+    robot: 'robot',
+    scienceFiction: 'science-fiction',
 };
 
 const genresLabels = {
     adventure: 'Avventura',
-    sea: 'Mare',
-    novel: 'Romanzo',
+    sea: 'mare',
+    novel: 'libro',
     stories: 'Racconti',
     fantasy: 'Fantastico',
     travels: 'Viaggi',
-    biography: 'Autobiografia',
+    biography: 'autobiografia',
+    robot: 'robot',
+    scienceFiction: 'fantascienza',
 };
 
 displayBooks(books);
@@ -116,6 +120,7 @@ function displayBooks(books) {
             '.': '',
             ' ': '',
             '"': '',
+            "'": '',
 
         }
 
